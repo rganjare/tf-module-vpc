@@ -5,4 +5,5 @@ resource "aws_vpc_peering_connection" "peer-connection" {
   tags = {
     Name = "peer-from-${var.ENV}-to-default-vpc"
   }
+  
 }

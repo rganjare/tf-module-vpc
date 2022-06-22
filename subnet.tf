@@ -18,4 +18,5 @@ resource "aws_subnet" "private" {
   tags = {
     Name = "${var.ENV}-priv-${element(var.AZ, count.index)}"
   }
+  
 }
